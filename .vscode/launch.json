@@ -1,0 +1,296 @@
+{
+  // ===========================================
+  // VS Code Debug Configuration
+  // Sunya E-commerce Project - High-End Company Standards
+  // ===========================================
+
+  "version": "0.2.0",
+  "configurations": [
+    // ===========================================
+    // NEXT.JS DEBUG CONFIGURATIONS
+    // ===========================================
+
+    {
+      "name": "Next.js: Development Server",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "pnpm dev",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "serverReadyAction": {
+        "action": "debugWithChrome",
+        "pattern": "- Local:.+(https?://.+)",
+        "uriFormat": "%s"
+      },
+      "presentation": {
+        "hidden": false,
+        "group": "nextjs",
+        "order": 1
+      }
+    },
+
+    {
+      "name": "Next.js: Debug Server-side",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "pnpm dev",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "presentation": {
+        "hidden": false,
+        "group": "nextjs",
+        "order": 2
+      }
+    },
+
+    {
+      "name": "Next.js: Debug Client-side",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:///./*": "${webRoot}/*",
+        "webpack:///*": "*",
+        "meteor://app/*": "*"
+      },
+      "presentation": {
+        "hidden": false,
+        "group": "nextjs",
+        "order": 3
+      }
+    },
+
+    {
+      "name": "Next.js: Attach to Browser",
+      "type": "chrome",
+      "request": "attach",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "presentation": {
+        "hidden": true,
+        "group": "nextjs",
+        "order": 4
+      }
+    },
+
+    // ===========================================
+    // VITEST DEBUG CONFIGURATIONS
+    // ===========================================
+
+    {
+      "name": "Vitest: Run All Tests",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/vitest/vitest.mjs",
+      "args": ["run", "--reporter=verbose"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "presentation": {
+        "hidden": false,
+        "group": "vitest",
+        "order": 1
+      }
+    },
+
+    {
+      "name": "Vitest: Run Tests in Watch Mode",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/vitest/vitest.mjs",
+      "args": ["watch", "--reporter=verbose"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "presentation": {
+        "hidden": false,
+        "group": "vitest",
+        "order": 2
+      }
+    },
+
+    {
+      "name": "Vitest: Debug Single Test",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/vitest/vitest.mjs",
+      "args": ["run", "--reporter=verbose", "--testNamePattern=${selectedTestName}"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "presentation": {
+        "hidden": true,
+        "group": "vitest",
+        "order": 3
+      }
+    },
+
+    {
+      "name": "Vitest: Debug Current Test File",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/vitest/vitest.mjs",
+      "args": ["run", "--reporter=verbose", "${file}"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "presentation": {
+        "hidden": true,
+        "group": "vitest",
+        "order": 4
+      }
+    },
+
+    // ===========================================
+    // NODE.JS DEBUG CONFIGURATIONS
+    // ===========================================
+
+    {
+      "name": "Node.js: Current File",
+      "type": "node",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "presentation": {
+        "hidden": false,
+        "group": "node",
+        "order": 1
+      }
+    },
+
+    {
+      "name": "Node.js: Nodemon",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["-r", "nodemon"],
+      "program": "${workspaceFolder}/app.js",
+      "console": "integratedTerminal",
+      "presentation": {
+        "hidden": true,
+        "group": "node",
+        "order": 2
+      }
+    },
+
+    // ===========================================
+    // PRODUCTION BUILD DEBUG
+    // ===========================================
+
+    {
+      "name": "Next.js: Production Build & Start",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "pnpm build && pnpm start",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "presentation": {
+        "hidden": true,
+        "group": "production",
+        "order": 1
+      }
+    },
+
+    {
+      "name": "Next.js: Production Start Only",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "pnpm start",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "presentation": {
+        "hidden": true,
+        "group": "production",
+        "order": 2
+      }
+    },
+
+    // ===========================================
+    // FIREBASE EMULATOR DEBUG
+    // ===========================================
+
+    {
+      "name": "Firebase: Start Emulators",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "firebase emulators:start",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "presentation": {
+        "hidden": false,
+        "group": "firebase",
+        "order": 1
+      }
+    },
+
+    {
+      "name": "Firebase: Emulate Functions",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "firebase emulators:start --only functions",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "presentation": {
+        "hidden": true,
+        "group": "firebase",
+        "order": 2
+      }
+    },
+
+    // ===========================================
+    // ATTACH TO RUNNING PROCESS
+    // ===========================================
+
+    {
+      "name": "Node.js: Attach to Process",
+      "type": "node",
+      "request": "attach",
+      "port": 9229,
+      "restart": true,
+      "presentation": {
+        "hidden": true,
+        "group": "attach",
+        "order": 1
+      }
+    },
+
+    // ===========================================
+    // COMPOUND CONFIGURATIONS
+    // ===========================================
+
+    {
+      "name": "Next.js: Full Stack Debug",
+      "type": "compound",
+      "presentation": {
+        "hidden": false,
+        "group": "nextjs",
+        "order": 5
+      },
+      "configurations": [
+        "Next.js: Development Server",
+        "Next.js: Debug Client-side"
+      ]
+    },
+
+    {
+      "name": "Vitest: Full Test Suite",
+      "type": "compound",
+      "presentation": {
+        "hidden": false,
+        "group": "vitest",
+        "order": 5
+      },
+      "configurations": [
+        "Vitest: Run All Tests"
+      ]
+    }
+  ],
+
+  "compounds": [
+    {
+      "name": "Next.js: Full Stack Debug",
+      "configurations": [
+        "Next.js: Development Server",
+        "Next.js: Debug Client-side"
+      ]
+    }
+  ]
+}

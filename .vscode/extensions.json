@@ -1,0 +1,159 @@
+{
+  // ===========================================
+  // VS Code Extensions Recommendations
+  // Sunya E-commerce Project - High-End Company Standards
+  // ===========================================
+
+  "recommendations": [
+    // ===========================================
+    // ESSENTIAL EXTENSIONS FOR NEXT.JS/REACT DEVELOPMENT
+    // ===========================================
+
+    // Tailwind CSS
+    "bradlc.vscode-tailwindcss",
+
+    // Prettier - Code Formatter
+    "esbenp.prettier-vscode",
+
+    // ESLint
+    "dbaeumer.vscode-eslint",
+
+    // TypeScript
+    "ms-vscode.vscode-typescript-next",
+
+    // ===========================================
+    // TESTING
+    // ===========================================
+
+    // Vitest
+    "vitest.explorer",
+
+    // ===========================================
+    // VERSION CONTROL
+    // ===========================================
+
+    // GitLens - Supercharge Git
+    "eamodio.gitlens",
+
+    // Git Graph
+    "mhutchie.git-graph",
+
+    // ===========================================
+    // PRODUCTIVITY
+    // ===========================================
+
+    // Auto Rename Tag
+    "formulahendry.auto-rename-tag",
+
+    // Path Intellisense
+    "christian-kohler.path-intellisense",
+
+    // Code Spell Checker
+    "streetsidesoftware.code-spell-checker",
+
+    // Todo Tree
+    "gruntfuggly.todo-tree",
+
+    // Todo Highlight
+    "wayou.vscode-todo-highlight",
+
+    // Bracket Pair Colorizer
+    "coenraads.bracket-pair-colorizer-2",
+
+    // ===========================================
+    // ICONS AND THEMES
+    // ===========================================
+
+    // Material Icon Theme
+    "pkief.material-icon-theme",
+
+    // One Dark Pro Theme
+    "binaryify.nordvscode",
+
+    // ===========================================
+    // CODE QUALITY
+    // ===========================================
+
+    // Error Lens
+    "usernamehw.errorlens",
+
+    // Import Cost
+    "wix.vscode-import-cost",
+
+    // SonarLint
+    "sonarsource.sonarlint-vscode",
+
+    // ===========================================
+    // AI ASSISTANCE
+    // ===========================================
+
+    // GitHub Copilot
+    "github.copilot",
+
+    // GitHub Copilot Chat
+    "github.copilot-chat",
+
+    // ===========================================
+    // MARKDOWN
+    // ===========================================
+
+    // Markdown All in One
+    "yzhang.markdown-all-in-one",
+
+    // Markdown Preview GitHub Styling
+    "bierner.markdown-preview-github-styles",
+
+    // ===========================================
+    // DOCKER (IF NEEDED)
+    // ===========================================
+
+    // Docker
+    "ms-azuretools.vscode-docker",
+
+    // ===========================================
+    // DATABASE (IF NEEDED)
+    // ===========================================
+
+    // MongoDB for VS Code
+    "mongodb.mongodb-vscode",
+
+    // ===========================================
+    // REMOTE DEVELOPMENT
+    // ===========================================
+
+    // Remote SSH
+    "ms-vscode-remote.remote-ssh",
+
+    // Remote Containers
+    "ms-vscode-remote.remote-containers",
+
+    // Remote WSL
+    "ms-vscode-remote.remote-wsl",
+
+    // ===========================================
+    // UTILITIES
+    // ===========================================
+
+    // npm Intellisense
+    "christian-kohler.npm-intellisense",
+
+    // JSON Tools
+    "eriklynd.json-tools",
+
+    // XML Tools
+    "dotjoshjohnson.xml",
+
+    // YAML
+    "redhat.vscode-yaml",
+
+    // TOML
+    "bungcip.better-toml",
+
+    // ===========================================
+    // PRETTIER ADVANCED
+    // ===========================================
+
+    // Prettier ESLint
+    "rvest.vs-code-prettier-eslint"
+  ]
+}

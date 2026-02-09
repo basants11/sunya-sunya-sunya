@@ -1,0 +1,19 @@
+[
+  {
+    "giftBoxChoice": "Premium Box",
+    "selectedDays": [
+      "Day 1",
+      "Day 2"
+    ],
+    "note": "Test note",
+    "timestamp": "2026-01-24T18:40:43.888Z"
+  },
+  {
+    "giftBoxChoice": "energy-vitality",
+    "selectedDays": [
+      "2026-01-25T00:00:00.000Z"
+    ],
+    "note": "Test",
+    "timestamp": "2026-01-24T18:41:48.115Z"
+  }
+]

@@ -1,0 +1,62 @@
+# ===========================================
+# Node Version Configuration
+# Sunya E-commerce Project - High-End Company Standards
+# ===========================================
+
+# This file specifies the Node.js version to use for this project.
+# Using nvm (Node Version Manager) or fnm (Fast Node Manager):
+#
+# nvm use
+# fnm use
+#
+# For automatic version switching, add this to your .zshrc or .bashrc:
+# eval "$(fnm env --use-on-calling)"
+# or
+# eval "$(nvm use --silent)"
+
+# Current Node.js LTS Version (as of 2024)
+# Using LTS version for stability and long-term support
+20
+
+# ===========================================
+# VERSION EXPLANATION
+# ===========================================
+
+# Node.js Release Schedule:
+# - v20.x: Current LTS (Long Term Support)
+# - v18.x: Previous LTS (Maintenance)
+# - v21.x: Current (Active Development)
+#
+# We use v20.x LTS because:
+# 1. Stable and well-tested
+# 2. Long-term support guaranteed
+# 3. Excellent performance improvements
+# 4. Modern ECMAScript features
+# 5. Strong TypeScript support
+# 6. Good compatibility with Next.js 14+
+# 7. V8 engine improvements
+
+# ===========================================
+# NPM/YARN/PNPM VERSION REQUIREMENTS
+# ===========================================
+
+# npm: >= 10.x (comes with Node.js 20)
+# yarn: >= 1.22.x
+# pnpm: >= 8.x (recommended)
+
+# ===========================================
+# VERIFICATION COMMANDS
+# ===========================================
+
+# Check Node.js version:
+# node --version
+
+# Check npm version:
+# npm --version
+
+# Check pnpm version:
+# pnpm --version
+
+# Check for available updates:
+# npm outdated
+# pnpm outdated

@@ -1,0 +1,104 @@
+# ===========================================
+# EditorConfig - Consistent Editor Behavior
+# Sunya E-commerce Project - High-End Company Standards
+# ===========================================
+
+root = true
+
+# ===========================================
+# GLOBAL SETTINGS
+# ===========================================
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# ===========================================
+# LANGUAGE-SPECIFIC SETTINGS
+# ===========================================
+
+# Markdown files
+[*.md]
+trim_trailing_whitespace = false
+
+# JSON files
+[*.json]
+indent_size = 2
+
+# YAML files
+[*.{yml,yaml}]
+indent_size = 2
+
+# XML files
+[*.xml]
+indent_size = 2
+
+# CSS files
+[*.css]
+indent_size = 2
+
+# SCSS files
+[*.scss]
+indent_size = 2
+
+# JavaScript files
+[*.{js,jsx}]
+indent_size = 2
+
+# TypeScript files
+[*.{ts,tsx}]
+indent_size = 2
+
+# Java files
+[*.java]
+indent_size = 4
+
+# Python files
+[*.py]
+indent_size = 4
+
+# Go files
+[*.go]
+indent_size = 4
+
+# Rust files
+[*.rs]
+indent_size = 4
+
+# C/C++ files
+[*.{c,cpp,h,hpp}]
+indent_size = 4
+
+# C# files
+[*.cs]
+indent_size = 4
+
+# SQL files
+[*.sql]
+indent_size = 4
+
+# Shell scripts
+[*.sh]
+indent_size = 4
+end_of_line = lf
+
+# Dockerfile
+[Dockerfile]
+indent_size = 4
+
+# Makefile
+[Makefile]
+indent_style = tab
+indent_size = 4
+
+# Git configuration
+[.gitconfig]
+indent_size = 4
+
+# INI files
+[*.ini]
+indent_size = 4
